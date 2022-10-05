@@ -9,7 +9,7 @@ static _UINT sand;
 void Output(char *str){
 	for(;*str != 0x00 ; str++){
 		putchar(*str);
-		Sleep(120);
+		Sleep(50);
 	}
 }
 
@@ -75,7 +75,9 @@ int main(int argy,char** argv){
 		}
 	}
 	Output(&buffer[0]);
-	
+	Output("\n");
+	Sleep(1000);
+	system("pause"); 
 	
 	return 0;
 }
